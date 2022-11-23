@@ -101,7 +101,7 @@ export const SideDashboard = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="dashboard/add" className="nav-link">
                   <i className="nav-icon far fa-plus-square" />
                   <p>
                     Extras
