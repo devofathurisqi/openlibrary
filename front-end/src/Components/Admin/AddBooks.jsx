@@ -16,7 +16,7 @@ export const AddBooks = () => {
   const [publisher, setPublisher] = useState("");
   const [abstract, setAbstract] = useState("");
   const [stocks, setStocks] = useState("");
-  
+  console.log(category);
 
   const newBook = async (e) => {
     e.preventDefault();
@@ -56,7 +56,6 @@ export const AddBooks = () => {
       });
       navigate("/dashboard/paginationPage");
       return alert(`success add book ${thisBook.data.new_books.title}`);
-
     } catch (error) {
       alert(
         `${error.response.data.errors[0].message} The title = ${error.response.data.fields.title}`
